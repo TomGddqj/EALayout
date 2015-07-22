@@ -65,6 +65,8 @@ class EADebugWindow : UIWindow {
         label.tag = 7001
         label.hidden = true
         label.textAlignment = NSTextAlignment.Right
+        
+        switchSkinDebug(button)
     }
     
     required init(coder aDecoder: NSCoder) {
