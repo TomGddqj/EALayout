@@ -18,6 +18,7 @@ class EATableViewController: EAViewController,UITableViewDataSource,UITableViewD
     
     func createTableView()->UITableView?{
         _tableView = _skinParser?.parse(EA_tableView, view: nil) as? UITableView
+        self._contentLayoutView?.removeFromSuperview()
         self._contentLayoutView = _tableView;
         if(_contentLayoutView != nil){
             self.view.addSubview(_contentLayoutView!);
