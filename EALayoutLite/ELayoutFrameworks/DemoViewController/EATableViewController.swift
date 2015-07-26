@@ -5,6 +5,7 @@ let defaultCell = "defaultCell"
 class EATableViewController: EAViewController,UITableViewDataSource,UITableViewDelegate{
     override func loadView() {
         super.loadView()
+        cacheViews = Dictionary<String, UIView>()
         createTableView();
     }
     
