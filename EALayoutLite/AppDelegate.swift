@@ -53,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             var debugWin = EADebugWindow.createDebugWindow()
             debugWin.hidden = false
             #if arch(i386) || arch(x86_64)
-                debugWin.setSkinPath("Resources/default")
+                debugWin.setSkinPath("Resources")
             #endif
         #endif
     }

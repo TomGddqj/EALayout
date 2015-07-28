@@ -13,12 +13,16 @@
 		28019CFC1B5F36B0009DBBB3 /* EAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28019CF91B5F36B0009DBBB3 /* EAViewController.swift */; };
 		28019D011B5F36FE009DBBB3 /* EATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28019CFF1B5F36FE009DBBB3 /* EATableViewCell.swift */; };
 		28019D031B5F6666009DBBB3 /* UIView+binddata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28019D021B5F6666009DBBB3 /* UIView+binddata.swift */; };
+		282B35B21B678E480014170B /* ViewController.json in Resources */ = {isa = PBXBuildFile; fileRef = 282B35AC1B678E480014170B /* ViewController.json */; };
+		282B35B31B678E480014170B /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = 282B35AD1B678E480014170B /* style.json */; };
+		282B35B61B678E480014170B /* common.json in Resources */ = {isa = PBXBuildFile; fileRef = 282B35B11B678E480014170B /* common.json */; };
 		289E36AA1B595BBB00362FE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E36A91B595BBB00362FE4 /* AppDelegate.swift */; };
 		289E36AC1B595BBB00362FE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E36AB1B595BBB00362FE4 /* ViewController.swift */; };
 		289E36B11B595BBB00362FE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 289E36B01B595BBB00362FE4 /* Images.xcassets */; };
 		289E36CD1B595DA600362FE4 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 289E36CC1B595DA600362FE4 /* libstdc++.dylib */; };
-		289E36D01B595E2C00362FE4 /* default in Resources */ = {isa = PBXBuildFile; fileRef = 289E36CF1B595E2C00362FE4 /* default */; };
 		289E36D61B59636D00362FE4 /* EALayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289E36D41B59636D00362FE4 /* EALayout.framework */; };
+		28DBBB601B6796BE00CEF1E3 /* testicon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28DBBB5E1B6796BE00CEF1E3 /* testicon@2x.jpg */; };
+		28DBBB611B6796BE00CEF1E3 /* 1024x682@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28DBBB5F1B6796BE00CEF1E3 /* 1024x682@2x.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,9 @@
 		28019CF91B5F36B0009DBBB3 /* EAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EAViewController.swift; sourceTree = "<group>"; };
 		28019CFF1B5F36FE009DBBB3 /* EATableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EATableViewCell.swift; sourceTree = "<group>"; };
 		28019D021B5F6666009DBBB3 /* UIView+binddata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+binddata.swift"; sourceTree = "<group>"; };
+		282B35AC1B678E480014170B /* ViewController.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ViewController.json; path = EALayoutLite/Resources/ViewController.json; sourceTree = "<group>"; };
+		282B35AD1B678E480014170B /* style.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = style.json; path = EALayoutLite/Resources/style.json; sourceTree = "<group>"; };
+		282B35B11B678E480014170B /* common.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = common.json; path = EALayoutLite/Resources/common.json; sourceTree = "<group>"; };
 		289E36A41B595BBB00362FE4 /* EALayoutLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EALayoutLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		289E36A81B595BBB00362FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		289E36A91B595BBB00362FE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,8 +42,9 @@
 		289E36B01B595BBB00362FE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		289E36CB1B595C5700362FE4 /* EALayoutLite-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EALayoutLite-Bridging-Header.h"; path = "EALayoutLite/EALayoutLite-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		289E36CC1B595DA600362FE4 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
-		289E36CF1B595E2C00362FE4 /* default */ = {isa = PBXFileReference; lastKnownFileType = folder; name = default; path = EALayoutLite/Resources/default; sourceTree = "<group>"; };
 		289E36D41B59636D00362FE4 /* EALayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EALayout.framework; sourceTree = "<group>"; };
+		28DBBB5E1B6796BE00CEF1E3 /* testicon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "testicon@2x.jpg"; path = "EALayoutLite/Resources/testicon@2x.jpg"; sourceTree = "<group>"; };
+		28DBBB5F1B6796BE00CEF1E3 /* 1024x682@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "1024x682@2x.jpg"; path = "EALayoutLite/Resources/1024x682@2x.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +122,11 @@
 		289E36CE1B595E0E00362FE4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				289E36CF1B595E2C00362FE4 /* default */,
+				28DBBB5E1B6796BE00CEF1E3 /* testicon@2x.jpg */,
+				28DBBB5F1B6796BE00CEF1E3 /* 1024x682@2x.jpg */,
+				282B35AC1B678E480014170B /* ViewController.json */,
+				282B35AD1B678E480014170B /* style.json */,
+				282B35B11B678E480014170B /* common.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -187,9 +199,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				289E36D01B595E2C00362FE4 /* default in Resources */,
+				282B35B21B678E480014170B /* ViewController.json in Resources */,
+				282B35B61B678E480014170B /* common.json in Resources */,
+				28DBBB611B6796BE00CEF1E3 /* 1024x682@2x.jpg in Resources */,
 				289E36B11B595BBB00362FE4 /* Images.xcassets in Resources */,
 				280139CE1B5CAC6C002C7FA7 /* Default-568h@2x.png in Resources */,
+				282B35B31B678E480014170B /* style.json in Resources */,
+				28DBBB601B6796BE00CEF1E3 /* testicon@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
