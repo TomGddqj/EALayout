@@ -1,6 +1,8 @@
 ![image](https://github.com/easycodingTop/EALayoutLiteForOC/raw/master/README.gif)
 # EALayoutLiteForOC
 
+精简版DEMO :  https://github.com/easycodingTop/EAExtraLiteDemo
+
 https://github.com/easycodingTop/EALayout    for Swift
 https://github.com/easycodingTop/EALayoutLiteForOC   for Objective-C
 
@@ -15,4 +17,4 @@ https://github.com/easycodingTop/EALayoutLiteForOC   for Objective-C
 基础教程: http://blog.csdn.net/fatherhui
 
 QQ群:454686295 
-视频演示地址：http://pan.baidu.com/s/1kTEL1xP
+视频演示地址：视频演示地址：http://pan.baidu.com/s/1kTEL1xP
