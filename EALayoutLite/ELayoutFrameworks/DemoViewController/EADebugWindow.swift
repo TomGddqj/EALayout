@@ -6,26 +6,28 @@ import Foundation
     
 @objc(EADebugWindow)
     
-class EADebugWindow : UIWindow {
-    
-    struct _IMP {
+class EADebugWindow : UIWindow
+{
+    struct _IMP
+    {
         static let debugWindow = EADebugWindow()
     }
     
-    class func createDebugWindow()->EADebugWindow {
+    class func createDebugWindow()->EADebugWindow
+    {
         return _IMP.debugWindow
     }
     
     internal var debugSkinPath : String?;
     
-    func setSkinPath(relativePath:String, absolutePath:String=__FILE__) {
-        
+    func setSkinPath(relativePath:String, absolutePath:String=__FILE__)
+    {
         debugSkinPath = absolutePath.stringByDeletingLastPathComponent.stringByAppendingPathComponent(relativePath)
         SkinMgr.sharedInstance().skinPath = self.debugSkinPath
     }
     
-    override init(frame:CGRect) {
-        
+    override init(frame:CGRect)
+    {
         super.init(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, 20))
         var button = UIButton(frame: self.bounds)
         button.addTarget(self, action: "switchSkinDebug:", forControlEvents: UIControlEvents.TouchUpInside)
@@ -69,24 +71,30 @@ class EADebugWindow : UIWindow {
         switchSkinDebug(button)
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init(coder aDecoder: NSCoder)
+    {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func switchRefresh(button:UIButton) {
+    func switchRefresh(button:UIButton)
+    {
         button.selected = !button.selected
-        if button.selected {
+        if button.selected
+        {
             NSUserDefaults.standardUserDefaults().setBool(true, forKey: "debugSkin")
             autoRefresh()
             self.viewWithTag(81002)?.hidden = true
-        } else {
+        }
+        else
+        {
             NSUserDefaults.standardUserDefaults().setBool(false, forKey: "debugSkin")
             autoRefresh()
             self.viewWithTag(81002)?.hidden = false
         }
     }
     
-    func refresh(button:UIButton) {
+    func refresh(button:UIButton)
+    {
         button.selected = !button.selected
         NSUserDefaults.standardUserDefaults().setBool(button.selected, forKey: "debugSkin")
         tick()
@@ -96,16 +104,19 @@ class EADebugWindow : UIWindow {
         label.text = "\(value)"
     }
     
-    func switchSkinDebug(button:UIButton) {
-
+    func switchSkinDebug(button:UIButton)
+    {
         button.selected = !button.selected
         
-        if button.selected {
+        if button.selected
+        {
             self.backgroundColor = UIColor.yellowColor()
             button.viewWithTag(81001)?.hidden = false
             button.viewWithTag(81002)?.hidden = false
             self.viewWithTag(7001)?.hidden = false
-        } else {
+        }
+        else
+        {
             self.backgroundColor = nil
             button.viewWithTag(81001)?.hidden = true
             button.viewWithTag(81002)?.hidden = true
@@ -116,10 +127,12 @@ class EADebugWindow : UIWindow {
         autoRefresh()
     }
     
-    func autoRefresh() {
+    func autoRefresh()
+    {
         if(NSUserDefaults.standardUserDefaults().boolForKey("debugSkin"))
         {
-            if nil == timer {
+            if nil == timer
+            {
                 var ds : NSTimeInterval = 2
                 #if (arch(x86_64) || arch(i386))
                     ds = 1
@@ -134,13 +147,17 @@ class EADebugWindow : UIWindow {
         }
     }
     
-    func tick() {
+    func tick()
+    {
         if(NSUserDefaults.standardUserDefaults().boolForKey("debugSkin"))
         {
             var rootVC = UIApplication.sharedApplication().windows[0].rootViewController
-            if let navi = rootVC as? UINavigationController {
+            if let navi = rootVC as? UINavigationController
+            {
                 (navi.topViewController as? EAViewController)?.freshSkin()
-            } else {
+            }
+            else
+            {
                 (rootVC as? EAViewController)?.freshSkin()
             }
             
@@ -154,7 +171,5 @@ class EADebugWindow : UIWindow {
     
     var timer : NSTimer?
 }
-    #endif
-
-
+#endif
 
