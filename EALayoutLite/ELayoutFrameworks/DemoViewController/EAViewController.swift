@@ -28,7 +28,8 @@ class EAViewController : UIViewController
     {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         _skinParser = SkinParser.getParserByName(NSStringFromClass(self.classForCoder))
-        _skinParser?.eventTarget = self;
+        _skinParser?.eventTarget = self
+        self.automaticallyAdjustsScrollViewInsets = false
     }
     
     required init(coder aDecoder: NSCoder)
